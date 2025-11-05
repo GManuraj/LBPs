@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int sales_count;
+    scanf("%d",&sales_count);
+    if(sales_count>30 && sales_count<=100)
+    {
+        if(sales_count>=30 && sales_count<=50)
+        {
+            printf("D");
+        }
+        else if(sales_count>=51&& sales_count<=60)
+        {
+            printf("C");
+        }
+        else if(sales_count>=61 && sales_count<=80)
+        {
+            printf("B");
+        }
+        else
+        {
+            printf("A");
+        }
+    }
+    else
+    {
+        printf("ERROR");
+    }
+}

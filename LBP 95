@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main() 
+{
+   int n,digit,sum1=0,sum2=0,total_sum;
+   scanf("%d",&n);
+   while(n!=0){
+       digit=n%10;
+       if(digit%2!=0){
+           sum1=sum1+digit;
+       }
+       else
+       {
+           sum2=sum2+digit;
+       }
+       n=n/10;
+   }
+   total_sum=abs(sum2-sum1);
+   printf("%d",total_sum);
+}

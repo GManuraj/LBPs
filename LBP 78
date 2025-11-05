@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int n,seclargest=-1,digit,largest=-1;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        digit=n%10;
+        if(digit>largest)
+        {
+            seclargest=largest;
+            largest=digit;
+        }
+        else if(digit<largest && digit>seclargest)
+        {
+            seclargest=digit;
+        }
+        n=n/10;
+    }
+    if(seclargest==-1)
+    {
+        printf("No second largest digit");
+    }
+    else
+    {
+        printf("%d",seclargest);
+    }
+}

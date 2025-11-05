@@ -1,0 +1,22 @@
+#include<stdio.h>
+int NonPrime(int num);
+int main() 
+{
+   int n,digit,sum=0;
+   scanf("%d",&n);
+   while(n!=0){
+       digit=n%10;
+       if(NonPrime(digit)){
+           sum=sum+digit;
+       }
+       n=n/10;
+   }
+   printf("%d",sum);
+}
+int NonPrime(int num){
+    if(num==0||num==1||num==2||num==3||num==5||num==7)
+    {
+        return 0;
+    }
+    return 1;
+}

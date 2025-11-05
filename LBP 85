@@ -1,0 +1,32 @@
+#include<stdio.h>
+int prime(int n);
+int  main()
+{
+    int original_amount,discount,digit,sum=0,temp;
+    scanf("%d",&original_amount);
+    temp=original_amount;
+    while(temp!=0){
+        digit=temp%10;
+        if(prime(digit)){
+            sum+=digit;
+        }
+        temp=temp/10;
+    }
+    discount=original_amount-sum;
+    printf("%d",discount);
+}
+int prime(int n){
+    int i,count=0,sum=0;
+    for(i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            count++;
+        }
+    }
+    if(count==2)
+    {
+        return 1;
+    }
+    return 0;
+}

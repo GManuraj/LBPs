@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main()
+{
+    float m,v,ke;
+    scanf("%f %f",&m,&v);
+    ke=(m*v*v)/2;
+    printf("%.2f",ke);
+}

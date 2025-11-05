@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int n,digit;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        digit=n%10;
+        if(digit==0)
+        {
+            printf("YES");
+        }
+        n=n/10;
+        else
+        {
+            printf("NO");
+        }
+        
+    }
+}

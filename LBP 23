@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int cups_brought,free_brought,total_cups;
+    scanf("%d",&cups_brought);
+    free_brought=cups_brought/6;
+    total_cups=cups_brought+free_brought;
+    printf("%d",total_cups);
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int checkbirthday(int day,char month[20])
+{
+    if(day==5 && strcmp(month,"July")==0)
+    {
+        printf("1");
+    }
+    else
+    {
+        printf("0");
+    }
+}
+int main()
+{
+    int day;
+    char month[20];
+    scanf("%d",&day);
+    scanf("%s",month);
+    checkbirthday(day,month);
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int num, digit, result = 0, place = 1;
+    scanf("%d", &num);
+    if(num == 0) {
+        result = 5;
+    } else {
+        while(num != 0) {
+            digit = num % 10;
+            if(digit == 0)
+                digit = 5;
+            result = result + digit * place;
+            place = place * 10;
+            num = num / 10;
+        }
+    }
+    printf("%d", result);
+}

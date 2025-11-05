@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main()
+{
+    float per;
+    int totalmarks, marksobtained;
+    scanf("%d %d", &totalmarks, &marksobtained);
+    if(marksobtained <= totalmarks)
+    {
+        per = (float)marksobtained / totalmarks * 100;
+    }
+    printf("%.0f", per);
+}

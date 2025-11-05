@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int i,j,k,sum1=0,sum2=0,totalsum;
+    scanf("%d %d %d",&i,&j,&k);
+    for(int x=i;x<=j;x++)
+    {
+        sum1+=x;
+    }
+    for(int y=j-1;y>=k;y--)
+    {
+        sum2+=y;
+    }
+    totalsum=sum1+sum2;
+    printf("%d",totalsum);
+}

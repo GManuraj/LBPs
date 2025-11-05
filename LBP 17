@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	float b,h,v;
+	scanf("%f %f",&b,&h);
+	v=(b*h)/3;
+	if((int)b==b && (int)h==h)
+	{
+		printf("%.0f",v);
+	}
+	else
+	{
+		printf("%.1f",v);
+	}
+}

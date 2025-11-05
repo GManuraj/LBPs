@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    float meters,res;
+    scanf("%f",&meters);
+    res=meters*0.001;
+    printf("%.3f",res);
+}

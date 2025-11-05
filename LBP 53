@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    float distance,speed,time;
+    scanf("%f %f",&speed,&time);
+    distance=speed*time;
+    printf("%.0f",distance);
+}

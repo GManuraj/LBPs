@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int n,smallest=10,digit,secondsmallest=10;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        digit=n%10;
+        if(digit<smallest)
+        {
+            secondsmallest=smallest;
+            smallest=digit;
+        }
+        else if(digit>smallest && digit<secondsmallest)
+        {
+            secondsmallest=digit;
+        }
+        n=n/10;
+    }
+    if(secondsmallest==10)
+    {
+        printf("No second smallest digit");
+    }
+    else
+    {
+        printf("%d",secondsmallest);
+    }
+}

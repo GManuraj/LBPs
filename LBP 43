@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int n,res;
+    scanf("%d",&n);
+    if(n%2==0)
+    {
+        res=n/2;
+        printf("%d",res);
+    }
+    else
+    {
+        printf("%d is not even",n);
+    }
+}

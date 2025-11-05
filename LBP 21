@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    float temp;
+    scanf("%f",&temp);
+    if(temp<=-100 || temp<=100)
+    {
+        if(temp<=0)
+        {
+            printf("FREEZING");
+        }
+        if(temp>0 && temp<=20)
+        {
+            printf("COLD");
+        }
+        if(temp>=21 && temp<=30)
+        {
+            printf("MODERATE");
+        }
+        if(temp>30)
+        {
+            printf("HOT");
+        }
+    }
+}

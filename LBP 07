@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    float a,A,b,h;
+    scanf("%f %f %f",&a,&b,&h);
+    A=((a+b)*h)/2;
+    printf("%.0f",A);
+}

@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    float total_marks,percentage,marks_obtained;
+    scanf("%f",&total_marks);
+    scanf("%f",&percentage);
+    marks_obtained=(percentage*total_marks)/100;
+    printf("%.2f",marks_obtained);
+}

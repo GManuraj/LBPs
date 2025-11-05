@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int i,temp,rev,digit,strt,end;
+    scanf("%d %d",&strt,&end);
+    for(i=strt;i<=end;i++)
+    {
+        rev=0;
+        temp=i;
+        while(temp!=0)
+        {
+            digit=temp%10;
+            rev=rev*10+digit;
+            temp=temp/10;
+        }
+        if(i==rev)
+        {
+            printf("%d\t",i);
+        }
+    }
+}

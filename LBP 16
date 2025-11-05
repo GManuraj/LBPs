@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    float res,value;
+    char from[100],to[100];
+    scanf("%f %s %s",&value,from,to);
+    if(strcmp(from,"METERS")==0 && strcmp(to,"FEET")==0)
+    {
+        res=value*3.28084;
+        printf("%.2f",res);
+    }
+    else if(strcmp(from,"KILOMETERS")==0 && strcmp(to,"MILES")==0)
+    {
+        res=value*0.621371;
+        printf("%.2f",res);
+    }
+    else if(strcmp(from,"FEET")==0 && strcmp(to,"METERS")==0)
+    {
+        res=value*0.3048;
+        printf("%.2f",res);
+    }
+}
